@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notarius.controllers.Start">
+   <children>
+      <ImageView fitHeight="358.0" fitWidth="800.0" layoutY="42.0">
+         <image>
+            <Image url="@res/image/7.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="228.0" layoutY="233.0" prefHeight="25.0" prefWidth="345.0" spacing="171.0">
+         <children>
+            <Button fx:id="B1" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" stylesheets="@../../../../java/view/styles.css" text="Авторизация">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="B2" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" stylesheets="@../../../../java/view/styles.css" text="Регистрация">
+               <font>
+                  <Font name="Corbel Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <VBox layoutX="228.0" layoutY="153.0" prefHeight="50.0" prefWidth="345.0" spacing="15.0">
+         <children>
+            <TextField fx:id="TF1" promptText="Login" />
+            <PasswordField fx:id="PF1" promptText="Password" />
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="120.0" prefWidth="800.0" styleClass="profile-layout" stylesheets="@../../../../java/view/styles.css">
+         <children>
+            <ImageView fitHeight="87.0" fitWidth="128.0" layoutX="478.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/image/4.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="243.0" layoutY="28.0" text="Notarius">
+               <font>
+                  <Font name="Corbel Bold Italic" size="64.0" />
+               </font>
+            </Label>
+            <Button fx:id="BExit" layoutX="725.0" layoutY="16.0" mnemonicParsing="false" stylesheets="@../../../../java/view/styles.css">
+               <graphic>
+                  <ImageView fitHeight="44.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@res/image/8.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</Pane>
